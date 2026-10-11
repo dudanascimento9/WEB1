@@ -1,14 +1,3 @@
-/* ===== PALETA (baseada na imagem do header) =====
-   Fundo violeta escuro: #12082b
-   Card roxo:            #25104a
-   Magenta neon:         #ff3ed2
-   Roxo elétrico:        #7b2ff7
-   Azul:                 #3a3bd8
-   Ciano:                #2fd8ff
-   Texto lilás claro:    #f1e8ff
-*/
-
-/* ===== GERAL ===== */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #12082b;
@@ -27,15 +16,15 @@ h2 {
   color: #ff3ed2;
 }
 
-/* ===== A. CABEÇALHO ===== */
+/* CABEÇALHO */
 header {
   background-image:
     linear-gradient(rgba(18, 8, 43, 0.3), rgba(18, 8, 43, 0.6)),
     url("assets/blade-runner.jpg");
-  background-color: #12082b; /* cor de reserva */
+  background-color: #12082b;
   background-size: cover;
   background-position: center;
-  min-height: 40vh; /* unidade vh */
+  min-height: 40vh;
   text-align: center;
   padding: 2rem 1rem;
   display: flex;
@@ -44,10 +33,10 @@ header {
 }
 
 header h1 {
-  color: rgb(47, 216, 255); /* ciano em RGB */
+  color: rgb(47, 216, 255);
   text-shadow:
     0 0 8px rgb(255, 62, 210),
-    0 0 20px rgb(123, 47, 247); /* brilho neon */
+    0 0 20px rgb(123, 47, 247);
   font-size: 3rem;
   margin: 0;
 }
@@ -58,7 +47,7 @@ header h2 {
   font-weight: normal;
 }
 
-/* ===== E. NAVEGAÇÃO ===== */
+/*NAVEGAÇÃO */
 nav {
   background-color: #3a1a7a;
   border-bottom: 3px solid #ff3ed2;
