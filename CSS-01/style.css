@@ -1,5 +1,6 @@
 body {
   background-color: rgb(223, 189, 226);
+  background-image: url(assets/imagem.png);
   font-family:
     system-ui,
     -apple-system,
@@ -33,4 +34,11 @@ p {
     padding: 8px;
     border: 1px solid rgb(255, 255, 204);
     border-radius: 4px;
+}
+
+.caixa3{
+    width: 400px;
+    min-height: 150px;
+    max-width: 100%;
+    background: lightgrey;
 }
