@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Filmes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header>
+    <h1>CinePunk</h1>
+    <h2>O seu catálogo de filmes favoritos</h2>
+  </header>
+
+  <!-- MENU DE NAVEGAÇÃO (links âncora) -->
+  <nav>
+    <a href="#destaque">Destaque</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#favoritos">Favoritos</a>
+    <a href="#generos">Gêneros</a>
+    <a href="#lancamentos">Lançamentos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <!-- DESTAQUE DA SEMANA -->
+  <section id="destaque">
+    <h2 id="titulo-destaque">Destaque da Semana</h2>
+    <div class="destaque">
+      <img src="assets/blade-runner-menor.jpg" alt="Poster do filme Blade Runner (2049)">
+      <div>
+        <h3>Blade Runner (2049)</h3>
+        <p>Em Blade Runner 2049, K descobre que replicantes podem se reproduzir e recebe a missão de encontrar e eliminar a criança, cujo nascimento ameaça a relação entre humanos e replicantes.</p>
+        <ul class="lista-destaque">
+          <li>Ficção científica</li>
+          <li>Suspense</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+  <section id="catalogo">
+    <h2 id="titulo-catalogo">Catálogo</h2>
+
+    <!-- Busca, filtro e ordem -->
+    <div class="controles">
+      <input type="text" id="busca" placeholder="Buscar filme...">
+      <select id="filtro-genero">
+        <option value="Todos">Todos</option>
+      </select>
+      <button id="btn-inverter">Inverter ordem</button>
+    </div>
+
+    <p>Filmes mostrados: <span id="contador">0</span></p>
+
+    <div class="grade" id="grade"></div>
+  </section>
+
+  <!-- FAVORITOS -->
+  <section id="favoritos">
+    <h2>Favoritos</h2>
+    <p>Total de favoritos: <span id="contador-favoritos">0</span></p>
+    <ul id="lista-favoritos"></ul>
+    <button id="btn-limpar">Limpar favoritos</button>
+  </section>
+
+  <!-- LISTA DE GÊNEROS -->
+  <section id="generos">
+    <h2>Gêneros</h2>
+    <ul class="generos">
+      <li>Ação</li>
+      <li>Comédia</li>
+      <li>Aventura</li>
+      <li>Drama</li>
+      <li>Ficção científica</li>
+      <li>Suspense</li>
+      <li>Terror</li>
+    </ul>
+  </section>
+
+  <!-- TABELA DE LANÇAMENTOS / PRÊMIOS -->
+  <section id="lancamentos">
+    <h2>Lançamentos e Prêmios</h2>
+    <table>
+      <tr>
+        <th>Filme</th>
+        <th>Ano</th>
+        <th>Nota</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>Tudo em Todo o Lugar ao Mesmo Tempo</td>
+        <td>2022</td>
+        <td>4.9</td>
+        <td>Vencedor do Oscar</td>
+      </tr>
+      <tr>
+        <td>Barbie</td>
+        <td>2023</td>
+        <td>5</td>
+        <td>Indicado ao Oscar</td>
+      </tr>
+      <tr>
+        <td>Parasita</td>
+        <td>2019</td>
+        <td>5</td>
+        <td>Vencedor do Oscar</td>
+      </tr>
+      <tr>
+        <td>Ainda Estou Aqui</td>
+        <td>2024</td>
+        <td>5</td>
+        <td>Vencedor do Oscar</td>
+      </tr>
+      <tr>
+        <td>Dear Friends (2007)</td>
+        <td>2007</td>
+        <td>4.8</td>
+        <td>Sem prêmios relevantes</td>
+      </tr>
+      <tr>
+        <td>Kamikaze Girls</td>
+        <td>2004</td>
+        <td>5</td>
+        <td>Yokohama Film Festival Melhor Filme</td>
+      </tr>
+      <tr>
+        <td>Backrooms: Um Não-Lugar</td>
+        <td>2026</td>
+        <td>4.9</td>
+        <td>Concorrendo a premiações</td>
+      </tr>
+      <tr>
+        <td>Obsession</td>
+        <td>2026</td>
+        <td>5</td>
+        <td>Concorrendo a premiações</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- SOBRE / CONTATO -->
+  <section id="contato">
+    <h2>Sobre e Contato</h2>
+    <p>
+      Este catálogo foi criado por Maria Eduarda, estudante de Engenharia de Software, como atividade de CSS e JavaScript.
+      Aqui ficam reunidos filmes que marcaram época, com destaques, notas e premiações.
+      Siga nas redes sociais para receber mais indicações de filmes todas as semanas.
+    </p>
+    <p class="redes">
+      <a href="https://github.com/dudanascimento9">GitHub</a>
+      <a href="https://www.linkedin.com/in/maria-eduarda-nascimento-silva-a5496530a">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 CinePunk</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

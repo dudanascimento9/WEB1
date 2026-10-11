@@ -1,0 +1,224 @@
+/* ===== PALETA (baseada na imagem do header) =====
+   Fundo violeta escuro: #12082b
+   Card roxo:            #25104a
+   Magenta neon:         #ff3ed2
+   Roxo elétrico:        #7b2ff7
+   Azul:                 #3a3bd8
+   Ciano:                #2fd8ff
+   Texto lilás claro:    #f1e8ff
+*/
+
+/* ===== GERAL ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #12082b;
+  color: #f1e8ff;
+  margin: 0;
+  line-height: 1.5;
+}
+
+section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1em;
+}
+
+h2 {
+  color: #ff3ed2;
+}
+
+/* ===== A. CABEÇALHO ===== */
+header {
+  background-image:
+    linear-gradient(rgba(18, 8, 43, 0.3), rgba(18, 8, 43, 0.6)),
+    url("assets/blade-runner.jpg");
+  background-color: #12082b; /* cor de reserva */
+  background-size: cover;
+  background-position: center;
+  min-height: 40vh; /* unidade vh */
+  text-align: center;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header h1 {
+  color: rgb(47, 216, 255); /* ciano em RGB */
+  text-shadow:
+    0 0 8px rgb(255, 62, 210),
+    0 0 20px rgb(123, 47, 247); /* brilho neon */
+  font-size: 3rem;
+  margin: 0;
+}
+
+header h2 {
+  color: #ffd6f6;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* ===== E. NAVEGAÇÃO ===== */
+nav {
+  background-color: #3a1a7a;
+  border-bottom: 3px solid #ff3ed2;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  color: #f1e8ff;
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #ff3ed2;
+  color: #12082b;
+  text-decoration: underline;
+}
+
+/* DESTAQUE DA SEMANA */
+.destaque {
+  display: flex;
+  gap: 1.5rem;
+  background-color: #25104a;
+  border: 3px solid #ff3ed2;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.destaque img {
+  width: 30%;
+  border-radius: 8px;
+}
+
+.destaque h3 {
+  color: #2fd8ff;
+}
+
+.lista-destaque {
+  list-style-type: square;
+}
+
+/* GRADE DE FILMES */
+.grade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #25104a;
+  border: 1px solid #7b2ff7;
+  border-radius: 10px;
+  padding: 0.8rem;
+  width: 30%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.card a {
+  color: #2fd8ff;
+  text-decoration: none;
+}
+
+.card a:hover,
+.card a:focus {
+  color: #ff3ed2;
+  text-decoration: underline;
+}
+
+.card p {
+  margin: 0.2rem 0;
+  font-size: 0.9em;
+}
+
+/* LISTA DE GÊNEROS */
+.generos {
+  list-style-type: circle;
+  padding-left: 2rem;
+}
+
+/* TABELA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #25104a;
+}
+
+th,
+td {
+  padding: 0.7rem;
+  border: 1px solid #7b2ff7;
+  text-align: left;
+}
+
+th {
+  background-color: #7b2ff7;
+  color: #ffffff;
+}
+
+/* Linhas alternadas */
+tr:nth-child(even) {
+  background-color: #351a66;
+}
+
+/* SOBRE / CONTATO */
+.perfil {
+  float: right;
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #ff3ed2;
+  margin: 0 0 0.5rem 1rem;
+}
+
+.redes a {
+  display: inline-block;
+  background-color: #7b2ff7;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+}
+
+.redes a:hover,
+.redes a:focus {
+  background-color: #ff3ed2;
+  color: #12082b;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #0a0418;
+  border-top: 3px solid #3a3bd8;
+  color: #f1e8ff;
+  text-align: center;
+  padding: 1rem;
+  clear: both;
+}
+
+/* RESPONSIVO */
+@media (max-width: 700px) {
+  .card {
+    width: 100%;
+  }
+  .destaque {
+    flex-direction: column;
+  }
+  .destaque img {
+    width: 100%;
+  }
+}
